@@ -1,0 +1,11 @@
+//General
+@import './variables.scss';
+
+body{
+  font-family: $main-font,
+  
+}
+
+.debug{
+  border: 1px solid red;
+}
