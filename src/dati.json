@@ -1,0 +1,38 @@
+[
+  {
+    "id": "0",
+    "label": "home",
+    "link": "#",
+    "active": "false"
+  },
+  {
+    "id": "1",
+    "label": "service",
+    "link": "#",
+    "active": "false"
+  },
+  {
+    "id": "2",
+    "label": "about",
+    "link": "#",
+    "active": "false"
+  },
+  {
+    "id": "3",
+    "label": "projects",
+    "link": "#",
+    "active": "false"
+  },
+  {
+    "id": "4",
+    "label": "results",
+    "link": "#",
+    "active": "false"
+  },
+  {
+    "id": "5",
+    "label": "contacts",
+    "link": "#",
+    "active": "false"
+  }
+]

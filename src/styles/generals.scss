@@ -1,9 +1,22 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Font
+@import '~@fontsource/montserrat/index.css';
+@import '~@fontsource/montserrat/400.css';
+
+// Font awesome
+$fa-font-path: '@/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
 //General
 @import './variables.scss';
 
 body{
-  font-family: $main-font,
-  
+  font-family: $main-font;
+  color: $text-color-dark;
 }
 
 .debug{
