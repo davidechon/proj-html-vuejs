@@ -1,9 +1,7 @@
 <template>
   <main>
-    <div id="jumbotron">
-
+    <div id="parallax">
       <div class="container-fluid">
-        <!-- <img src="../assets/img/bg-parallax.png" alt="jumbotron" class="col-12"> -->
         <div class="container">
           <div class="row d-flex justify-content-center align-items-center text-box">
             <div class="col-8 text-center">
@@ -11,18 +9,67 @@
               <h4 class="col-7">No matter what your company needs, we will be ready to assist you in the best possible way.</h4>
               <button class="btn btn-cta" type="button">Get in Touch</button>
              <button class="btn btn-outline-cta" type="button">Read more</button>
-            </div> <!-- /Jumbotron container col-6 -->
-         
-            
+            </div> <!-- /parallax container col-6 -->
+           </div> <!-- /parallax container row -->
+        </div> <!-- /parallax container -->
+      </div> <!-- /parallax container-fluid -->
 
-           </div> <!-- /Jumbotron container row -->
-        </div> <!-- /Jumbotron container -->
-      </div> <!-- /Jumbotron container-fluid -->
-
-    </div> <!-- /Jumbotron -->
+    </div> <!-- /parallax -->
 
 
-    <div id="service" class="debug">Service</div>
+    <div id="service" class="debug">Service
+        <div class="container debug">
+          <div class="row debug">
+            <h4>Our business areas</h4>
+            <h2>Excellence in <span class="text-evidence">Services</span></h2>
+            <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of expedienced and renowned professionals. These are some options that you can hire</p>
+            <button class="btn btn-cta" type="button">See all</button>
+          </div> <!-- /service - container - row -->
+
+          <div class="row">
+            <ul>
+              <li>
+                <img src="../assets/svgs/svg-1.svg" alt="svg-1" class="icons">
+                <i class="fa-solid fa-arror-right icons"></i>
+                <h3>Audit & Assurance</h3>
+                <p>Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </li>
+              <li>
+                <img src="../assets/svgs/svg-2.svg" alt="svg-2" class="icons">
+                <i class="fa-solid fa-arror-right icons"></i>
+                <h3>Financial Advisory</h3>
+                <p>Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </li>
+               <li>
+                <img src="../assets/svgs/svg-3.svg" alt="svg-3" class="icons">
+                <i class="fa-solid fa-arror-right icons"></i>
+                <h3>Analytics and Advisory</h3>
+                <p>Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </li>
+               <li>
+                <img src="../assets/svgs/svg-4.svg" alt="svg-4" class="icons">
+                <i class="fa-solid fa-arror-right icons"></i>
+                <h3>Middle Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </li>
+               <li>
+                <img src="../assets/svgs/svg-5.svg" alt="svg-5" class="icons">
+                <i class="fa-solid fa-arror-right icons"></i>
+                <h3>Legasl consulting</h3>
+                <p>Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </li>
+               <li>
+                <img src="../assets/svgs/svg-6.svg" alt="svg-5" class="icons">
+                <i class="fa-solid fa-arror-right icons"></i>
+                <h3>Regulaory risk</h3>
+                <p>Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </li>
+            </ul>
+          </div> <!-- /service - container - row - cards-->
+        </div> <!-- /service - container -->
+    </div> <!-- /service -->
+
+
     <div id="about" class="debug">Company</div>
     <div id="project" class="debug">Project</div>
     <div id="results" class="debug">Results</div>
@@ -41,13 +88,29 @@ export default {
 
 main{
 
-  #jumbotron{
+  #parallax{
     background-image: url(../assets/img/bg-parallax.png);
     background-position: top;
     height: 90vh;
     margin-top: 10px;
-    border: 1px solid green;
-    
+    border: 1px solid red;
+    // background: 
+    //       linear-gradient(
+    //           to left,
+    //           transparent 0px,
+    //           transparent 20px,
+    //           rgba(#000, 0.02) 20px,
+    //           rgba(#000, 0.02) 40px
+    //       ),
+    //       linear-gradient(
+    //           to bottom,
+    //           transparent 0px,
+    //           transparent 20px,
+    //           rgba(#000, 0.02) 20px,
+    //           rgba(#000, 0.02) 40px
+    //       );
+    //       background-size: 40px, 100% 40px;
+          
 
     .container{
       margin-top: 380px;
@@ -62,6 +125,7 @@ main{
         font-weight: 300;
         color: $text-color-middle;
       }
+      
 
       .text-box{
         height: 300px;
@@ -72,6 +136,7 @@ main{
       .text-evidence{
         color: $text-color-evidence;
         background-color: $bg-color-evidence;
+        padding: 10px;
       }
 
       .btn-cta{
@@ -89,11 +154,31 @@ main{
       font-size: 1.2rem;
       }
 
+    } // /parallax container
 
-    } // /jumbotron container
-
-  } // /#jumbotron
+  } // /#parallax
 
 } // /main
+
+#service{
+  height: 90vh;
+  margin-top: 10px;
+
+
+  .icons{
+    width: 50px;
+    height: 50px;
+    color: #007f87;
+    font-size: 12px;
+    border: 1px solid green;
+  }
+  .fa-solid .fa-arror-right{
+    // width: 50px;
+    // height: 50px;
+    color: #007f87;
+    font-size: 18px;
+    border: 1px solid green;
+  }
+} // /main - service
 
 </style>
