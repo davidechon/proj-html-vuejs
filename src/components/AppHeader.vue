@@ -48,14 +48,14 @@ export default {
 @import '../styles/variables.scss';
 
 header{
-  position: fixed;
+  // position: fixed;
   top:0;
   left:0;
   width: 100%;
   z-index: 1;
   height: 70px;
   background: $bg-dark;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 
   #headerTop{
     height: 70px; 
