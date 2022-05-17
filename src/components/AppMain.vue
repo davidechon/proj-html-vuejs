@@ -96,10 +96,74 @@
       </section> <!-- /service -->
 
 
-    <div id="about" class="debug">Company</div>
+    <section id="about">
+      <span class="box-top bullets"></span>
+      <div class="container">
+        <div class="row about">
+          <div class="col-6 d-flex flex-column justify-content-center align-items-start ">
+            <h4 class="text-evidence">About the network</h4>
+            <h2><span class="text-evidence">The</span> Company</h2>
+            <p class="about">For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
+            <div class="row row-cols-2 gx-3 d-flex justify-content-start">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-award icons"></i>
+                  Tradition</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </div>
+            </div> <!-- /card 1 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-lock icons"></i>
+                  Security</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </div>
+            </div> <!-- /card 2 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-pen-to-square icons"></i>
+                  Certificate</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </div>
+            </div> <!-- /card 3 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-graduation-cap icons"></i>
+                  Expertise</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consecteur adipiscing elit.</p>
+              </div>
+            </div> <!-- /card 4 -->
+          </div> <!-- /row cards -->
+          <span>
+            <button class="btn btn-cta" type="button">Get in Touch</button>
+            <button class="btn btn-outline-cta" type="button">Read more</button>
+          </span>
+          </div> <!-- /col-6 -->
+          <div class="col-6">
+            <!-- <img src="../assets/img/about-4.jpg" alt="About"> -->
+            <div class="box-big">
+
+            </div>
+          </div> <!-- /col-6 -->
+        </div> <!-- /container row about -->
+      </div> <!-- /container about -->
+      <span class="box-down bullets"></span>
+    </section> <!-- /about -->
+
+
+
+
+
+
+<!-- 
+
     <div id="project" class="debug">Project</div>
     <div id="results" class="debug">Results</div>
-    <div id="contact" class="debug">Contact</div>
+    <div id="contact" class="debug">Contact</div> -->
   </main>
 </template>
 
@@ -138,8 +202,6 @@ main{
         color: $text-color-middle;
       }
       
-      
-      
       .text-box{
         position: absolute;
         top: 10%;
@@ -176,14 +238,11 @@ main{
 
   } // /#parallax
 
-
-
 #service{
   height: 100vh;
   margin-top: 10px;
   padding: 40px;
   background: #eef4ed;
-  border: 2px solid red;
 
   .service h2{
     font-size: 1.8rem;
@@ -195,6 +254,7 @@ main{
         color: $text-color-evidence;
         background-color: $bg-color-evidence;
         padding: 10px;
+        border-radius: 5px;
       }
   .service h4{
     color: $text-color-evidence;
@@ -240,7 +300,9 @@ main{
       font-size: 30px;
     }
     
-    .card-body{padding: 20px;}
+    .card-body{
+      padding: 20px;
+      }
     h5.card-title{
       font-size: 28px;
       font-weight: 900;
@@ -251,15 +313,128 @@ main{
       color: $text-color-middle;
     }
 
+  } // /#service
+
+#about{
+  background: #111117;
+  color: #ffffff;
+  position: relative;
+  height: 100vh;
+  overflow: none;
+
+  .box-top{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    height: 60px;
+    padding: 0;
+    z-index: 100;
+  }
+  .bullets{
+    background-image:  url("../assets/img/bullets.png");
+    background-size: cover;
+    background-position: left top;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+  .box-down{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    height: 60px;
+    z-index: 100;
+  }
 
   
+  .about h2 .text-evidence{
+    background-color: #0e272d;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .about h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 20px 0 10px; 
+    }
+  .about h4{
+    color: $text-color-evidence;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 20px 0; 
+  }
+  .about p{
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin: 20px 0; 
+  }
+
+
+  .about .card{
+    // min-height: 300px;
+    width: calc((100% / 2));
+    margin: 15px 0;
+    padding: 0;
+    background: none;
+  }
+    
+    .about .icons{
+      color: $icons;
+      // font-size: 30px;
+    }
+    .about .card-body{
+      padding: 20px;
+
+
+      h5.card-title{
+        font-size: 28px;
+        font-weight: 900;
+      }
+      p.card-text{
+        padding-top: 20px;
+        color: $text-color-middle;
+      }
+    } // /card-body about
+
+  .about .btn-cta{
+    background: $btn-cta-dark;
+    color: $text-color-light;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+  .about .btn-outline-cta{
+    border: 2px solid $btn-cta-dark;
+    color: $text-color-light;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+
+  .about .box-big{
+    width: 100vh;
+    height: 100vh;
+    background-image: url("../assets/img/about-4.jpg");
+    background-position: cover;
+  }
 
 
 
 
-  } // /#service
-   
 
+
+
+
+
+
+
+
+}
+ // /#about
 
 
 
