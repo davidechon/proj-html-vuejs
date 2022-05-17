@@ -205,7 +205,54 @@
       </div> <!-- /project container -->
     </section> <!-- /project -->
 
-<section id="results" class="debug">Results</section>
+<section id="results" class="results">
+  <div class="container-fluid results text-center text-white">
+    <div class="results container">
+      <h4 class="results-text-evidence">what are we doing</h4>
+      <h2 class="results"><span class="text-evidence">Results</span> in Numbers</h2>
+      <ul class="d-flex justify-content-center align-items-center">
+        <li>
+          <span class="text-evidence">128</span>
+          <h4>Certifications</h4>
+        </li>
+        <li>
+          <span class="text-evidence">230</span>
+          <h4>Employees</h4>
+        </li>
+        <li>
+          <span class="text-evidence">517</span>
+          <h4>Customers</h4>
+        </li>
+        <li>
+          <span class="text-evidence">94</span>
+          <h4>Countries Served</h4>
+        </li>
+      </ul>
+    </div>
+    <div class="results result-footer container-fluid">
+      <ul class="results-loghi container d-flex justify-content-center align-items-center">
+        <li>
+          <img src="../assets/img/logo-4.png" alt="logo-4" class="results-loghi">
+        </li>
+        <li>
+          <img src="../assets/img/logo-5.png" alt="logo-5" class="results-loghi">
+        </li>
+        <li>
+          <img src="../assets/img/logo-1.png" alt="logo-1" class="results-loghi">
+        </li>
+        <li>
+          <img src="../assets/img/logo-2.png" alt="logo-2" class="results-loghi">
+        </li>
+        <li>
+          <img src="../assets/img/logo-3.png" alt="logo-3" class="results-loghi">
+        </li>
+        <li>
+          <img src="../assets/img/logo-4.png" alt="logo-4" class="results-loghi">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 
 
@@ -478,6 +525,7 @@ main{
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
+  
 
   .project h2{
     font-size: 2rem;
@@ -525,16 +573,90 @@ main{
       font-size: 30px;
       font-weight: 900;
     }
-    
-
-
-
-
-
-
-
-
 } // /#project
+
+#results{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  background-image: url(../assets/img/bg-7.jpg);
+  background-position: center;
+  background-origin: border-box;
+  height: 90vh;
+  position: relative;
+
+  .results.container{
+    position: absolute;
+    top: 30%;
+    Left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  
+  .results h2{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 10px;
+    }
+    .results h2 span.text-evidence{
+      background-color: #038484;
+      color: #ffffff;
+      font-size: 2.3rem;
+      font-weight: 900;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  .results span.text-evidence{
+    color: $text-color-evidence;
+    padding: 10px;
+    font-size: 50px;
+  }
+  .results h4{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 20px 0; 
+  }
+  .results h4.results-text-evidence{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $text-color-evidence;
+    margin-bottom: 50px;
+  }
+  .results h4.text-evidence{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $text-color-evidence;
+  }
+  .results ul li{
+      list-style-type: none;
+      margin: 50px 100px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .results.result-footer.container-fluid{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #121216;
+      height: 280px;
+    }
+    .results-loghi.container{
+      padding: 30px auto;
+    }
+    
+  .results-loghi img{
+    max-width: 60px;
+    list-style-type: none;
+    margin-top: 100px;
+    filter: invert(100%);
+    }
+
+
+
+} // /#results
+
 
 
 
