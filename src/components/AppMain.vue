@@ -19,14 +19,16 @@
 
     <section id="service">
         <div class="container">
-          <div class="row">
-            <h4 class="service">Our business areas</h4>
-            <h2 class="service">Excellence in <span class="text-evidence">Services</span></h2>
-            <p class="service">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of expedienced and renowned professionals. These are some options that you can hire</p>
-            <button class="btn btn-cta" type="button">See all</button>
+          <div class="row service">
+            <h4>Our business areas</h4>
+            <h2>Excellence in <span class="text-evidence">Services</span></h2>
+            <span class="d-flex justify-content-between align-items-center">
+              <p class="col-8">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of expedienced and renowned professionals. These are some options that you can hire</p>
+            <button class="col-1 btn btn-cta" type="button">See all</button>
+            </span>
           </div> <!-- /service - container - row -->
 
-          <div class="row row-cols-3 gx-3">
+            <div class="row row-cols-3 gx-3 d-flex justify-content-center">
             <div class="card mb-3">
               <div class="card-header d-flex justify-content-between">
                 <img src="../assets/svgs/svg-1.svg" alt="svg-1" class="icons">
@@ -179,15 +181,21 @@ main{
 #service{
   height: 100vh;
   margin-top: 10px;
+  padding: 40px;
   background: #eef4ed;
+  border: 2px solid red;
 
   .service h2{
-    // color: $text-color-evidence;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 900;
-    padding-top: 10px; 
+    padding: 20px 10px; 
     }
+  .service .text-evidence{
+        color: $text-color-evidence;
+        background-color: $bg-color-evidence;
+        padding: 10px;
+      }
   .service h4{
     color: $text-color-evidence;
     font-size: 0.8rem;
@@ -195,35 +203,56 @@ main{
     font-weight: 900;
     padding-top: 10px; 
     }
+  .service p{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 10px; 
+    color: $text-color-middle;
+    }
+    .service .btn-cta{
+      background: $btn-cta-dark;
+      color: $text-color-light;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      }
 
      .card{
       min-height: 300px;
-      width: calc((100% / 3) - 60px);
+      width: calc((100% / 3) - 30px);
       margin: 15px;
       padding: 20px;
+      border: 0;
       border-radius: 15px;
       background-color: #fff;
     }
-    .card-header{}
-    .card-body{}
-    .card-title{}
-    .card-text{}
-
-
-  .icons{
+    .card-header {
+      background: none;
+      border: 0;
+    }
+    img.icons {
     width: 50px;
     height: 50px;
-    color: #007f87;
+    color: $icons;
     font-size: 12px;
-    border: 1px solid green;
-  }
-  .fas.fa-solid.fa-arrow-right{
-    // width: 50px;
-    // height: 50px;
-    color: #007f87;
-    font-size: 150px;
-    border: 1px solid green;
-  }
+    }
+    .icons.fa-solid.fa-arrow-right{
+      color: $icons;
+      font-size: 30px;
+    }
+    
+    .card-body{padding: 20px;}
+    h5.card-title{
+      font-size: 28px;
+      font-weight: 900;
+      color: $text-color-dark;
+    }
+    p.card-text{
+      padding-top: 20px;
+      color: $text-color-middle;
+    }
+
+
+  
 
 
 
