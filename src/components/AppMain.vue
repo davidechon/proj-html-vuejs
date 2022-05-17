@@ -13,9 +13,7 @@
            </div> <!-- /parallax container row -->
         </div> <!-- /parallax container -->
       </div> <!-- /parallax container-fluid -->
-
     </section> <!-- /parallax -->
-
 
     <section id="service">
         <div class="container">
@@ -27,7 +25,6 @@
             <button class="col-1 btn btn-cta" type="button">See all</button>
             </span>
           </div> <!-- /service - container - row -->
-
             <div class="row row-cols-3 gx-3 d-flex justify-content-center">
             <div class="card mb-3">
               <div class="card-header d-flex justify-content-between">
@@ -91,10 +88,8 @@
               </div>
             </div> <!-- /card 6 -->
           </div> <!-- /row cards -->
-
         </div> <!-- /service - container -->
       </section> <!-- /service -->
-
 
     <section id="about">
       <span class="box-top bullets"></span>
@@ -154,16 +149,71 @@
       <span class="box-down bullets"></span>
     </section> <!-- /about -->
 
+    <section id="project">
+      <div class="container project">
+        <h4>we do more for eveyone</h4>
+        <h2>Actions &amp; <span class="text-evidence">Projects</span></h2>
+        <ul class="d-flex justify-content-center align-items-center">
+          <li class="active">All</li>
+          <li>Institutional</li>
+          <li>Social</li>
+          <li>Events</li>
+          <li>Innovation</li>
+          <li>Environment</li>
+          <li>Technology</li>
+        </ul>
+        <div class="container-fluid">
+            <div class="row row-cols-3 justify-content-center">
+              <div class="col-3 card text-white">
+                <img src="../assets/img/project-1.jpg" class="card-img" alt="project-1">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Academic professional program in social media</h5>
+                </div>
+              </div> <!-- /card 1 -->
+              <div class="col-3 card text-white">
+                <img src="../assets/img/project-2.jpg" class="card-img" alt="project-2">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Presiden's speech at the annual meeting</h5>
+                </div>
+              </div> <!-- /card 2 -->
+              <div class="col-3 card text-white">
+                <img src="../assets/img/project-3.jpg" class="card-img" alt="project-3">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">International business trip in Shangai</h5>
+                </div>
+              </div> <!-- /card 3 -->
+              <div class="col-3 card text-white">
+                <img src="../assets/img/project-4.jpg" class="card-img" alt="project-4">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Technology workshop with education theme</h5>
+                </div>
+              </div> <!-- /card 4 -->
+              <div class="col-3 card text-white">
+                <img src="../assets/img/project-5.jpg" class="card-img" alt="project-5">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Donation of clothes and food to the partner NGO</h5>
+                </div>
+              </div> <!-- /card 5 -->
+              <div class="col-3 card text-white">
+                <img src="../assets/img/project-6.jpg" class="card-img" alt="project-6">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Confreaternization of the procurement team</h5>
+                </div>
+              </div> <!-- /card 6 -->
+            </div> <!-- /row -->
+        </div> <!-- /project container-fluid -->
+      </div> <!-- /project container -->
+    </section> <!-- /project -->
+
+<section id="results" class="debug">Results</section>
 
 
 
 
 
-<!-- 
 
-    <div id="project" class="debug">Project</div>
-    <div id="results" class="debug">Results</div>
-    <div id="contact" class="debug">Contact</div> -->
+
+<!--<div id="contact" class="debug">Contact</div> -->
   </main>
 </template>
 
@@ -422,6 +472,60 @@ main{
     background-position: cover;
   }
 
+} // /#about
+
+#project{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+
+  .project h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 40px;
+    }
+    .project h2 .text-evidence{
+    background-color: $bg-color-evidence;
+    color: $text-color-evidence;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .project h4{
+    color: $text-color-evidence;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 30px 0; 
+  }
+  .project ul li{
+      list-style-type: none;
+      margin: 30px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .active{
+      background-color: $bg-color-evidence;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .project .row{
+      margin: 20px auto;
+    }
+    .project .card{
+      border: none;
+      margin: 20px 10px;
+    }
+    .project .card-img{
+      border-radius: 10px;
+    }
+    .project .card-title{
+      position: absolute;
+      bottom: 10%;
+      font-size: 30px;
+      font-weight: 900;
+    }
+    
 
 
 
@@ -430,11 +534,7 @@ main{
 
 
 
-
-
-
-}
- // /#about
+} // /#project
 
 
 
