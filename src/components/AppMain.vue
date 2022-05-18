@@ -230,7 +230,8 @@
       </ul>
     </div>
     <div class="container-fluid">
-      <ul class="results-loghi container d-flex justify-content-center align-items-center">
+      <div class="results-loghi small-loghi container">
+        <ul class="d-flex justify-content-center align-items-center">
         <li>
           <img src="../assets/img/logo-4.png" alt="logo-4">
         </li>
@@ -250,6 +251,7 @@
           <img src="../assets/img/logo-4.png" alt="logo-4">
         </li>
       </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -664,15 +666,14 @@ main{
       left: 0;
       bottom: 0;
       right: 0;
-    border: 2px solid red;
     }
-    
-  .results-loghi img{
-    
-    // margin: 200px 0 10px;
-    height: 40px;
-    filter: invert(100%);
-    border: 2px solid red;
+    .small-loghi ul li{
+      list-style-type: none;
+      margin: 100px 20px;
+    }
+    .results-loghi img{
+      height: 40px;
+      filter: invert(100%);
     }
 
 
