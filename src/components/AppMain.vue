@@ -141,7 +141,6 @@
           <div class="col-6">
             <!-- <img src="../assets/img/about-4.jpg" alt="About"> -->
             <div class="box-big">
-
             </div>
           </div> <!-- /col-6 -->
         </div> <!-- /container row about -->
@@ -205,64 +204,126 @@
       </div> <!-- /project container -->
     </section> <!-- /project -->
 
-<section id="results" class="results">
-  <div class="container-fluid results text-center text-white">
-    <div class="results container">
-      <h4 class="results-text-evidence">what are we doing</h4>
-      <h2 class="results"><span class="text-evidence">Results</span> in Numbers</h2>
-      <ul class="d-flex justify-content-center align-items-center">
-        <li>
-          <span class="text-evidence">128</span>
-          <h4>Certifications</h4>
-        </li>
-        <li>
-          <span class="text-evidence">230</span>
-          <h4>Employees</h4>
-        </li>
-        <li>
-          <span class="text-evidence">517</span>
-          <h4>Customers</h4>
-        </li>
-        <li>
-          <span class="text-evidence">94</span>
-          <h4>Countries Served</h4>
-        </li>
-      </ul>
-    </div>
-    <div class="container-fluid">
-      <div class="results-loghi small-loghi container">
-        <ul class="d-flex justify-content-center align-items-center">
-        <li>
-          <img src="../assets/img/logo-4.png" alt="logo-4">
-        </li>
-        <li>
-          <img src="../assets/img/logo-5.png" alt="logo-5">
-        </li>
-        <li>
-          <img src="../assets/img/logo-1.png" alt="logo-1">
-        </li>
-        <li>
-          <img src="../assets/img/logo-2.png" alt="logo-2">
-        </li>
-        <li>
-          <img src="../assets/img/logo-3.png" alt="logo-3">
-        </li>
-        <li>
-          <img src="../assets/img/logo-4.png" alt="logo-4">
-        </li>
-      </ul>
+    <section id="results" class="results">
+      <div class="container-fluid results text-center text-white">
+        <div class="results container">
+          <h4 class="results-text-evidence">what are we doing</h4>
+          <h2 class="results"><span class="text-evidence">Results</span> in Numbers</h2>
+          <ul class="d-flex justify-content-center align-items-center">
+            <li>
+              <span class="text-evidence">128</span>
+              <h4>Certifications</h4>
+            </li>
+            <li>
+              <span class="text-evidence">230</span>
+              <h4>Employees</h4>
+            </li>
+            <li>
+              <span class="text-evidence">517</span>
+              <h4>Customers</h4>
+            </li>
+            <li>
+              <span class="text-evidence">94</span>
+              <h4>Countries Served</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="container-fluid">
+          <div class="results-loghi small-loghi container">
+            <ul class="d-flex justify-content-center align-items-center">
+            <li>
+              <img src="../assets/img/logo-4.png" alt="logo-4">
+            </li>
+            <li>
+              <img src="../assets/img/logo-5.png" alt="logo-5">
+            </li>
+            <li>
+              <img src="../assets/img/logo-1.png" alt="logo-1">
+            </li>
+            <li>
+              <img src="../assets/img/logo-2.png" alt="logo-2">
+            </li>
+            <li>
+              <img src="../assets/img/logo-3.png" alt="logo-3">
+            </li>
+            <li>
+              <img src="../assets/img/logo-4.png" alt="logo-4">
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section> <!-- /results -->
+
+    <section id="contact" class="debug">Contact
+      <div class="container debug">
+        <div class="row debug">
+          <div class="col-6">
+            <div class="row g-2">
+              
+                <h4>send a message</h4>
+                <h2>Get in <span class="text-evidence">Touch</span></h2>
+                <span class="d-flex justify-content-between align-items-center">
+                  <p class="col-8">We will respond to your message as soon as possible.</p>
+                </span> <!-- /contact title text -->
+
+              <div class="col-md debug">
+                <input id="name" type="text" class="form-control"  placeholder="Name" aria-label="Name">
+                  
+              
+                <input id="phone" type="text" class="form-control"  placeholder="Phone" aria-label="phone">
+                  
+              </div>
+              <div class="col-md debug">
+                
+                <input id="floatingInputGrid" type="email" class="col-6 form-control" placeholder="Email">
+              
+                <div class="form-floating">
+                  <select class="form-select" id="moreInfo" aria-label="Floating label select example">
+                    <option selected>More Info</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 debug">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-success" type="submit">Send</button>
+              </div>
+
+
+            </div> <!-- /form -->
 
 
 
+          </div>  <!-- /col-6 form-->
+          <div class="col-6">
+            <h3>Example Inc.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+            <span>
+              <i class="fa-solid fa-phone icons"></i>
+              +1(305)1234-5678
+            </span>
+            <span>
+              <i class="fa-solid fa-envelope icons"></i>
+              hello@example.com
+            </span>
+            <span>
+              <i class="fa-solid fa-location-dot icons"></i>
+              Main Avenue, 987
+            </span>
+            <button class="btn btn-outline-cta" type="button">View Map</button>
+          </div>  <!-- /col-6 view map-->
+        </div> <!-- /row -->
+      </div>  <!-- /container -->
 
-
-
-
-<!--<div id="contact" class="debug">Contact</div> -->
+    </section> <!-- /contact -->
   </main>
 </template>
 
