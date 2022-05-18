@@ -25,7 +25,7 @@
             <button class="col-1 btn btn-cta" type="button">See all</button>
             </span>
           </div> <!-- /service - container - row -->
-            <div class="row row-cols-3 gx-3 d-flex justify-content-center">
+            <div class="row row-cols-3 gx-3 d-flex flex-wrap justify-content-center">
             <div class="card mb-3">
               <div class="card-header d-flex justify-content-between">
                 <img src="../assets/svgs/svg-1.svg" alt="svg-1" class="icons">
@@ -99,7 +99,7 @@
             <h4 class="text-evidence">About the network</h4>
             <h2><span class="text-evidence">The</span> Company</h2>
             <p class="about">For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
-            <div class="row row-cols-2 gx-3 d-flex justify-content-start">
+            <div class="row row-cols-2 gx-3 d-flex flex-wrap justify-content-start">
             <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title">
@@ -165,14 +165,14 @@
         <div class="container-fluid">
             <div class="row row-cols-3 justify-content-center">
               <div class="col-3 card text-white">
-                <img src="../assets/img/project-1.jpg" class="card-img" alt="project-1">
+                <img src="../assets/img/project-1.jpg" class="card-img card-img-overlay" alt="project-1">
                 <div class="card-img-overlay">
                   <h5 class="card-title">Academic professional program in social media</h5>
                 </div>
               </div> <!-- /card 1 -->
               <div class="col-3 card text-white">
-                <img src="../assets/img/project-2.jpg" class="card-img" alt="project-2">
-                <div class="card-img-overlay">
+                <img src="../assets/img/project-2.jpg" class="card-img card-img-overlay" alt="project-2">
+                <div class=" card-img-overlay">
                   <h5 class="card-title">Presiden's speech at the annual meeting</h5>
                 </div>
               </div> <!-- /card 2 -->
@@ -183,7 +183,7 @@
                 </div>
               </div> <!-- /card 3 -->
               <div class="col-3 card text-white">
-                <img src="../assets/img/project-4.jpg" class="card-img" alt="project-4">
+                <img src="../assets/img/project-4.jpg" class="card-img card-img-overlay" alt="project-4">
                 <div class="card-img-overlay">
                   <h5 class="card-title">Technology workshop with education theme</h5>
                 </div>
@@ -195,7 +195,7 @@
                 </div>
               </div> <!-- /card 5 -->
               <div class="col-3 card text-white">
-                <img src="../assets/img/project-6.jpg" class="card-img" alt="project-6">
+                <img src="../assets/img/project-6.jpg" class="card-img card-img-overlay" alt="project-6">
                 <div class="card-img-overlay">
                   <h5 class="card-title">Confreaternization of the procurement team</h5>
                 </div>
@@ -229,25 +229,25 @@
         </li>
       </ul>
     </div>
-    <div class="results result-footer container-fluid">
+    <div class="container-fluid">
       <ul class="results-loghi container d-flex justify-content-center align-items-center">
         <li>
-          <img src="../assets/img/logo-4.png" alt="logo-4" class="results-loghi">
+          <img src="../assets/img/logo-4.png" alt="logo-4">
         </li>
         <li>
-          <img src="../assets/img/logo-5.png" alt="logo-5" class="results-loghi">
+          <img src="../assets/img/logo-5.png" alt="logo-5">
         </li>
         <li>
-          <img src="../assets/img/logo-1.png" alt="logo-1" class="results-loghi">
+          <img src="../assets/img/logo-1.png" alt="logo-1">
         </li>
         <li>
-          <img src="../assets/img/logo-2.png" alt="logo-2" class="results-loghi">
+          <img src="../assets/img/logo-2.png" alt="logo-2">
         </li>
         <li>
-          <img src="../assets/img/logo-3.png" alt="logo-3" class="results-loghi">
+          <img src="../assets/img/logo-3.png" alt="logo-3">
         </li>
         <li>
-          <img src="../assets/img/logo-4.png" alt="logo-4" class="results-loghi">
+          <img src="../assets/img/logo-4.png" alt="logo-4">
         </li>
       </ul>
     </div>
@@ -548,7 +548,7 @@ main{
   }
   .project ul li{
       list-style-type: none;
-      margin: 30px;
+      margin: 30px 25px;
       font-size: 1.2rem;
       font-weight: 700;
     }
@@ -565,12 +565,28 @@ main{
       margin: 20px 10px;
     }
     .project .card-img{
+      display: block;
+      padding: 0;
+      width: 100%;
+      height: auto;
       border-radius: 10px;
+      overflow: hidden;
+    }
+    .project .card-img-overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.3);
     }
     .project .card-title{
       position: absolute;
       bottom: 10%;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 900;
     }
 } // /#project
@@ -643,14 +659,20 @@ main{
       height: 280px;
     }
     .results-loghi.container{
-      padding: 30px auto;
+      height: 280px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    border: 2px solid red;
     }
     
   .results-loghi img{
-    max-width: 60px;
-    list-style-type: none;
-    margin-top: 100px;
+    
+    // margin: 200px 0 10px;
+    height: 40px;
     filter: invert(100%);
+    border: 2px solid red;
     }
 
 
