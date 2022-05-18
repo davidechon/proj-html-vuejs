@@ -25,6 +25,12 @@
           </span>
           
           <ul class="d-flex justify-content-end align-items-center">
+            <!-- <li><a href="#parallax">HOME</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#results">RESULTS</a></li>
+            <li class="btn btn-cta"><a href="#contact">GET IN TOUCH</a></li> -->
             <li>HOME</li>
             <li>SERVICE</li>
             <li>ABOUT</li>
@@ -56,6 +62,14 @@ header{
   height: 70px;
   background: $bg-dark;
   // margin-bottom: 100px;
+
+  // a{
+  //   text-decoration: none;
+  //   color: #bcbebc;
+  // }
+  // a:hover{
+  //   cursor: pointer;
+  // }
 
   #headerTop{
     height: 70px; 
