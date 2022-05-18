@@ -176,8 +176,8 @@
                 </div>
               </div> <!-- /card 2 -->
               <div class="col-3 card text-white">
-                <img src="../assets/img/project-3.jpg" class="card-img" alt="project-3">
-                <div class="card-img-overlay">
+                <img src="../assets/img/project-3-dark.jpg" class="card-img" alt="project-3">
+                <div class="">
                   <h5 class="card-title">International business trip in Shangai</h5>
                 </div>
               </div> <!-- /card 3 -->
@@ -188,8 +188,8 @@
                 </div>
               </div> <!-- /card 4 -->
               <div class="col-3 card text-white">
-                <img src="../assets/img/project-5.jpg" class="card-img" alt="project-5">
-                <div class="card-img-overlay">
+                <img src="../assets/img/project-5-dark.jpg" class="card-img" alt="project-5">
+                <div class="">
                   <h5 class="card-title">Donation of clothes and food to the partner NGO</h5>
                 </div>
               </div> <!-- /card 5 -->
@@ -577,6 +577,7 @@ main{
       width: 100%;
       border-radius: 10px;
       background: rgba(0, 0, 0, 0.3);
+      overflow: hidden;
     }
     .project .card-title{
       position: absolute;
