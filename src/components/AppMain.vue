@@ -255,75 +255,7 @@
       </div>
     </section> <!-- /results -->
 
-    <section id="contact" class="debug">Contact
-      <div class="container debug">
-        <div class="row debug">
-          <div class="col-6">
-            <div class="row g-2">
-              
-                <h4>send a message</h4>
-                <h2>Get in <span class="text-evidence">Touch</span></h2>
-                <span class="d-flex justify-content-between align-items-center">
-                  <p class="col-8">We will respond to your message as soon as possible.</p>
-                </span> <!-- /contact title text -->
-
-              <div class="col-md debug">
-                <input id="name" type="text" class="form-control"  placeholder="Name" aria-label="Name">
-                  
-              
-                <input id="phone" type="text" class="form-control"  placeholder="Phone" aria-label="phone">
-                  
-              </div>
-              <div class="col-md debug">
-                
-                <input id="floatingInputGrid" type="email" class="col-6 form-control" placeholder="Email">
-              
-                <div class="form-floating">
-                  <select class="form-select" id="moreInfo" aria-label="Floating label select example">
-                    <option selected>More Info</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12 debug">
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-              </div>
-
-              <div class="col-12">
-                <button class="btn btn-success" type="submit">Send</button>
-              </div>
-
-
-            </div> <!-- /form -->
-
-
-
-          </div>  <!-- /col-6 form-->
-          <div class="col-6">
-            <h3>Example Inc.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
-            <span>
-              <i class="fa-solid fa-phone icons"></i>
-              +1(305)1234-5678
-            </span>
-            <span>
-              <i class="fa-solid fa-envelope icons"></i>
-              hello@example.com
-            </span>
-            <span>
-              <i class="fa-solid fa-location-dot icons"></i>
-              Main Avenue, 987
-            </span>
-            <button class="btn btn-outline-cta" type="button">View Map</button>
-          </div>  <!-- /col-6 view map-->
-        </div> <!-- /row -->
-      </div>  <!-- /container -->
-
-    </section> <!-- /contact -->
+    
   </main>
 </template>
 
@@ -656,7 +588,6 @@ main{
 
 #results{
   margin-top: 100px;
-  margin-bottom: 100px;
   text-align: center;
   background-image: url(../assets/img/bg-7.jpg);
   background-position: center;
@@ -740,11 +671,6 @@ main{
 
 
 } // /#results
-
-
-
-
-
 } // /main
 
 </style>

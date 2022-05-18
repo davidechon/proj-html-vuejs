@@ -6,6 +6,7 @@
  
   <div class="main ">
     <app-main/>
+    <app-contact/>
   </div>
  
   <div class="footer">
@@ -18,13 +19,15 @@
 </template>
 
 <script>
+import AppContact from './components/AppContact.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 
 export default {
   name: 'App',
-  components: { AppHeader, AppMain, AppFooter 
+  components: { AppHeader, AppMain, AppFooter,
+    AppContact 
    },
   // data(){
   //   return{
